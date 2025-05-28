@@ -15,13 +15,13 @@ The analysis includes:
 
 ```
 OpticalFlowAnemones/
-├── video_to_tiff.ipynb # Convert videos to TIFF stacks
-├── optical_flow.py # Compute and smooth dense optical flow
-├── training.py     # Training U-Net for masks
-├── segmentation.py # Applying U-Net for masking
-├── order_parameter.py # Compute flow coherence (local order parameter)
-├── visualization.py # Overlay streamlines and annotations
-├── statistics.py # Statistical comparison and plotting
+├── convert_videos_to_tiff_frames.ipynb # Convert videos to TIFF stacks
+├── compute_dense_optical_flow.py # Compute and smooth dense optical flow
+├── train_unet.py     # Training U-Net for masks
+├── predict_masks.py # Applying U-Net for masking
+├── calculate_order.py # Compute flow coherence (local order parameter)
+├── plot_streamlines.py # Overlay streamlines and annotations
+├── generate_superplot.py # Statistical comparison and plotting
 └── README.md
 ```
 
@@ -51,30 +51,24 @@ pip install -r requirements.txt
 
 
 - Convert MP4 videos to TIFF:
-
 Run convert_videos_to_tiff_frames.py
 
 - Compute Optical Flow:
-
 Run compute_dense_optical_flow.py
+Run interpolate_smooth_fields.py
 
 - Train U-Net for segmentation:
-
 Run train_unet.py 
 
 - Generate and apply masks:
-
 Run predict_masks.py
 
 - Calculate Order Parameter:
-
 Run calculate_order.py
 
 - Visualize Streamlines:
-
 Run plot_streamlines.py to generate TIFF overlays
 
 - Analyze and plot statistics:
-
 Run generate_superplot.py
 
