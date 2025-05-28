@@ -13,8 +13,8 @@ The analysis includes:
 
 ## Repository Structure
 
-
-FlowAnalysis/
+```
+OpticalFlowAnemones/
 ├── video_to_tiff.ipynb # Convert videos to TIFF stacks
 ├── optical_flow.py # Compute and smooth dense optical flow
 ├── training.py     # Training U-Net for masks
@@ -23,7 +23,7 @@ FlowAnalysis/
 ├── visualization.py # Overlay streamlines and annotations
 ├── statistics.py # Statistical comparison and plotting
 └── README.md
-
+```
 
 ## Requirements
 
@@ -45,34 +45,36 @@ Create a virtual environment and install dependencies:
 python -m venv env
 source env/bin/activate  # or .\\env\\Scripts\\activate on Windows
 pip install -r requirements.txt
-
+```
 
 ## Usage
 
+```
 Convert MP4 videos to TIFF:
 
-Run video_to_tiff/convert_videos_to_tiff_frames.py
+Run convert_videos_to_tiff_frames.py
 
 Compute Optical Flow:
 
-Use optical_flow/compute_dense_optical_flow.py
+Use compute_dense_optical_flow.py
 
 Train U-Net for segmentation:
 
-See segmentation/train_unet.py with optional data augmentation
+See train_unet.py 
 
 Generate and apply masks:
 
-Use segmentation/predict_masks.py
+Use predict_masks.py
 
 Calculate Order Parameter:
 
-Run order_parameter/calculate_order.py
+Run calculate_order.py
 
 Visualize Streamlines:
 
-Run visualization/plot_streamlines.py to generate TIFF overlays
+Run plot_streamlines.py to generate TIFF overlays
 
 Analyze and plot statistics:
 
-Use statistics/generate_superplot.py
+Use generate_superplot.py
+```
