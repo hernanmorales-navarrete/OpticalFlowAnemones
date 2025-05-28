@@ -51,24 +51,24 @@ pip install -r requirements.txt
 
 
 - Convert MP4 videos to TIFF:
-Run convert_videos_to_tiff_frames.py
+```Run convert_videos_to_tiff_frames.py```
 
 - Compute Optical Flow:
-Run compute_dense_optical_flow.py
-Run interpolate_smooth_fields.py
+```Run compute_dense_optical_flow.py
+Run interpolate_smooth_fields.py```
 
 - Train U-Net for segmentation:
-Run train_unet.py 
+```Run train_unet.py ```
 
 - Generate and apply masks:
-Run predict_masks.py
+```Run predict_masks.py```
 
 - Calculate Order Parameter:
-Run calculate_order.py
+```Run calculate_order.py```
 
 - Visualize Streamlines:
-Run plot_streamlines.py to generate TIFF overlays
+```Run plot_streamlines.py to generate TIFF overlays```
 
 - Analyze and plot statistics:
-Run generate_superplot.py
+```Run generate_superplot.py```
 
