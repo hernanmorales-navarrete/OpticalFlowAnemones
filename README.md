@@ -25,25 +25,40 @@ OpticalFlowAnemones/
 └── README.md
 ```
 
-## Requirements
 
-- Python 3.8+
-- Libraries:
-  - OpenCV
-  - NumPy
-  - SciPy
-  - matplotlib
-  - seaborn
-  - tifffile
-  - scikit-image
-  - PyTorch (for U-Net training and inference)
-  - albumentations
 
+## Software Dependencies and Environment
+
+Tested on:
+Operating System: Ubuntu 22.04
+Python: 3.10
+
+Required packages:
+- OpenCV ≥ 4.5
+- NumPy ≥ 1.21
+- SciPy ≥ 1.7
+- matplotlib ≥ 3.5
+- seaborn ≥ 0.11
+- tifffile ≥ 2021.4
+- scikit-image ≥ 0.19
+- PyTorch ≥ 1.11 (with CUDA support for training on GPU)
+- albumentations ≥ 1.1
+
+Non-standard hardware (optional but recommended):
+- GPU with CUDA support (for faster U-Net training and prediction)
+
+## Installation Guide
+
+Clone the repository:
+```bash
+git clone https://github.com/your-username/OpticalFlowAnemones.git
+cd OpticalFlowAnemones
+```
 Create a virtual environment and install dependencies:
 
 ```bash
-python -m venv env
-source env/bin/activate  # or .\\env\\Scripts\\activate on Windows
+conda create anemone_analysis python=3.10 -y
+conda activate anemone_analysis
 pip install -r requirements.txt
 ```
 
